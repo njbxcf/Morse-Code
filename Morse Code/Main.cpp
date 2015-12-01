@@ -1,19 +1,22 @@
 /*
 
-
-Your system should be able to decode a message using the morse tree that you
-built. For example, decoding (symbols don't copy over) results in “dg”. The problem text briefly explains how you
-can do that. Notice that between the symbols (dots and dashes) is a space. The space is a
-delimiter that separates the codes for letters.
-
-Your system should also encode a message. For example, encoding “ac” results in
-
-You may use a binary search tree or a map to store the codes for letters.
----------------------------------------------
 Plan 
-Main will ask the user if they want to imput morse code or convert to morse code
-Tree Header will build the morse tree = Write a function that builds the morse tree shown in the figure above. The
-information of the tree (the letters and the codes) is stored in a file.
+------------------------------------
+1. Main asks the user if they want to decode morse code or encode to morse code
+
+2. Tree Header will build the morse tree = Write a function that builds the morse tree shown in the figure above. The
+information of the tree (the letters and the codes) is stored in a txt file. Use a binary search tree or a map to store the codes for letters.
+
+	//cin.get() morse.txt file
+
+3. For Encoding: ab = .-
+
+Call the binary search tree or map. Compare the morse nodes and print the English alphabet
+
+4. For Decoding: .- = ab
+Call the binary search tree or map. Compare the English Aplhabet and print the morse nodes 
+See the project as there is an explaination somewhere on the PDF. ~~~~
+Notice that between the symbols (dots and dashes) is a space. The space is a delimiter that separates the codes for letters.
 
 */
 
@@ -24,22 +27,22 @@ using namespace std;
 void main()
 
 {
-	//cin.get() morse.txt file
-
 	int userinput;
-	cout << "Please indicat if you would like to: \n" << "A. Morse Code into English Alphabet" << "\n 2.English Alphabet into Morse Code.";
+	string result;
+	cout << "Please indicat if you would like to: \n" << "1. Decode Morse Code into English Alphabet" << "\n 2. Encode English Alphabet into Morse Code.";
 	cin >> userinput;
 
 	switch (userinput)
 	{
 	case 1:
-			//call function for morse code into english Alphabet
+			//
 			break;
 	case 2:
 		//call function for English Alphabet into Morse Code
 		break;
-	}
-	
 
+	}
+	result = "Words or things go here!"
+	cout >> result >> endl;
 
 }
